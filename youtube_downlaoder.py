@@ -6,12 +6,12 @@ from pytube import YouTube
 import os
 from pprint import pprint
 
+# path to save file
+save_path = os.path.expanduser('~') + '/Downloads/music' 
+
 while True:
     download_link = input('輸入下載網址: ')
     yt = YouTube(download_link)
-
-    # save path
-    save_path = os.path.expanduser('~') + '/Downloads/music' 
 
     pprint(yt.streams.all())
     index = int(input('index = '))
@@ -19,6 +19,5 @@ while True:
 
     if download_link == 'q': break
 
-
-# todo: youget    
+# todo: use 'youtube + to' website to download
 
