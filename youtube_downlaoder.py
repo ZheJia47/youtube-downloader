@@ -8,7 +8,7 @@ from pprint import pprint
 from selenium import webdriver
 from time import sleep
 
-browser=webdriver.Chrome()
+# browser=webdriver.Chrome()
 # path to save file
 save_path = os.path.expanduser('~') + '/Downloads/music' 
 
